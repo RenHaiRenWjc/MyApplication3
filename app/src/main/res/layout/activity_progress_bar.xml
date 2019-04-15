@@ -6,12 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".ProgressBarActivity">
 
-    <Button
-        android:id="@+id/bt_progressBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="进度条渐变"/>
+    <ProgressBar
+        android:layout_width="600dp"
+        android:layout_height="200dp"/>
 
 </LinearLayout>
