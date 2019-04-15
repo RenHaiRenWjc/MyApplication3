@@ -15,16 +15,16 @@ public class GamePlayer implements IGamePlayer {
 
     @Override
     public void login(String user, String pwd) {
-        System.out.println("user name=" + user + ",pwd=" + pwd);
+        System.out.println("user name = " + user + ",pwd = " + pwd);
     }
 
     @Override
     public void killBoss() {
-        System.out.println("killBoss ....");
+        System.out.println("killBoss");
     }
 
     @Override
     public void upgrade() {
-        System.out.println("oh,yes upgrade ....");
+        System.out.println("oh,yes upgrade");
     }
 }
