@@ -1,5 +1,7 @@
 package com.example.javaproject.proxy;
 
+import java.lang.reflect.Method;
+
 /**
  * ClassName:com.example.javaproject.proxy
  * Description:
@@ -10,8 +12,6 @@ public class Client {
     public static void main(String[] args) {
 //        proxyTest1();
         proxyTest2();
-
-
     }
 
     private static void proxyTest2() {
@@ -23,6 +23,13 @@ public class Client {
         player.login("wjc", "pwd");//玩家
 //        player.killBoss();
 //        player.upgrade();
+
+        //查看代理类
+        ProxyUtils.generateClassFile(factory.getClass(), player.getClass().getSimpleName());
+        Method[] methods = factory.getClass().getMethods();
+        for (Method method : methods) {
+            System.out.println(method.getName());
+        }
     }
 
     private static void proxyTest1() {
