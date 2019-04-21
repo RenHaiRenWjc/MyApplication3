@@ -9,6 +9,9 @@ public class GamePlayer implements IGamePlayer {
 
     private String nickName;
 
+    public GamePlayer() {
+    }
+
     public GamePlayer(String nickName) {
         this.nickName = nickName;
     }
