@@ -36,6 +36,11 @@ public class SynTest {
         }
     }
 
+    public void inCount4() {
+//        System.out.println("count=" + count);
+        count++;
+    }
+
     private static class Count extends Thread {
         private SynTest mSynTest;
 
@@ -46,8 +51,8 @@ public class SynTest {
         @Override
         public void run() {
             super.run();
-            for (int i = 0; i < 100; i++) {
-                mSynTest.inCount2();
+            for (int i = 0; i < 10000; i++) {
+                mSynTest.inCount4();
             }
         }
     }
