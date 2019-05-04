@@ -1,4 +1,4 @@
-package com.example.javaproject.concuttent.NotifyAndWait;
+package com.example.javaproject.concuttent.notifyAndWait;
 
 /**
  * ClassName:com.example.javaproject.concuttent.NotifyAndWait
