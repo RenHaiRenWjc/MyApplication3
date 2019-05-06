@@ -16,9 +16,9 @@ public class MyThreadPool {
     // 任务队列，作为一个缓冲
     private BlockingQueue<Runnable> taskQueue;
     // 工作线程组
-    WorkThread[] workTasks;
+    private WorkThread[] workTasks;
 
-    int workerNum;
+    private int workerNum;
 
 
     // 创建线程池
