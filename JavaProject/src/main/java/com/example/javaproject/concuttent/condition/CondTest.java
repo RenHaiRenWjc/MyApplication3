@@ -1,14 +1,14 @@
-package com.example.javaproject.concuttent.notifyAndWait;
+package com.example.javaproject.concuttent.condition;
 
 /**
  * ClassName:com.example.javaproject.concuttent.NotifyAndWait
- * Description: wait、notify、notifyAll
+ * Description:
  * author:wjc on 2019/5/3 23:11
  */
-public class NWTest {
-   static Express express = new Express(0, "gz");
+public class CondTest {
+    static ExpressCond express = new ExpressCond(0, "gz");
 
-    private static class kmThread extends Thread{
+    private static class kmThread extends Thread {
         @Override
         public void run() {
             super.run();
@@ -16,7 +16,7 @@ public class NWTest {
         }
     }
 
-    private static class addressThread extends Thread{
+    private static class addressThread extends Thread {
         @Override
         public void run() {
             super.run();
@@ -29,7 +29,7 @@ public class NWTest {
             new kmThread().start();
         }
         for (int i = 0; i < 3; i++) {
-           new addressThread().start();
+            new addressThread().start();
         }
         Thread.sleep(1000);
         express.setAddrss("fs");

@@ -2,7 +2,8 @@ package com.example.javaproject.concuttent.notifyAndWait;
 
 /**
  * ClassName:com.example.javaproject.concuttent.NotifyAndWait
- * Description:
+ * Description:必须被 synchronized 包围
+ * wait、notify、notifyAll
  * author:wjc on 2019/5/3 23:04
  */
 public class Express {
@@ -22,7 +23,7 @@ public class Express {
 
     public synchronized void setAddrss(String addrss) {
         this.addrss = addrss;
-        notifyAll();
+        notify();
     }
 
     public synchronized void waitKm() {

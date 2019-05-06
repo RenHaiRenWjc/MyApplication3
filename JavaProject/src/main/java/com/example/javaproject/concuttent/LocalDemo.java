@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * ClassName:com.example.javaproject.concuttent
- * Description:
+ * Description:ThreadLocal
  * author:wjc on 2019/5/2 15:53
  */
 public class LocalDemo {
