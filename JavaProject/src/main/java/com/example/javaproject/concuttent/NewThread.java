@@ -14,8 +14,8 @@ public class NewThread {
         MyThread myThread = new MyThread();
         myThread.start();
 
-        MyRunable myRunable = new MyRunable();
-        new Thread(myRunable).start();
+        MyRunnable myRunnable = new MyRunnable();
+        new Thread(myRunnable).start();
 
         CallBackInfo callBackInfo = new CallBackInfo();
         FutureTask<String> futureTask = new FutureTask<>(callBackInfo);
@@ -23,7 +23,7 @@ public class NewThread {
 //        futureTask.get();
         System.out.println(futureTask.get());
 
-        FutureTask<String> futureTask1 = new FutureTask<>(myRunable, "result,myrunable");
+        FutureTask<String> futureTask1 = new FutureTask<>(myRunnable, "result,MyRunnable");
         new Thread(futureTask1).start();
         System.out.println(futureTask1.get());
 
@@ -38,11 +38,11 @@ public class NewThread {
         }
     }
 
-    //实现 Runable 接口
-    static class MyRunable implements Runnable {
+    //实现 Runnable 接口
+    static class MyRunnable implements Runnable {
         @Override
         public void run() {
-            System.out.println("runable");
+            System.out.println("runnable");
         }
     }
 

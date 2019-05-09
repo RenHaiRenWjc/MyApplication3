@@ -39,6 +39,8 @@ public class MyThreadPool {
             workTasks[i] = new WorkThread();
             workTasks[i].start();
         }
+
+//        Runtime.getRuntime().availableProcessors(); //获取 cpu 核心数
     }
 
     // 执行任务,其实只是把任务加入任务队列，什么时候执行有线程池管理器决定
