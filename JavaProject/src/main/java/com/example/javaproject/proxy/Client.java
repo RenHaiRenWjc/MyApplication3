@@ -1,5 +1,7 @@
 package com.example.javaproject.proxy;
 
+import java.lang.ref.SoftReference;
+import java.lang.ref.WeakReference;
 import java.lang.reflect.Method;
 
 /**
@@ -30,6 +32,11 @@ public class Client {
         for (Method method : methods) {
             System.out.println(method.getName());
         }
+
+        GamePlayer gamePlayer = new GamePlayer();
+        WeakReference<GamePlayer> gamePlayerWeakReference=new WeakReference<>(gamePlayer);
+        gamePlayer = null;// 干掉强引用，确保这个实例只有 gamePlayerSoftReference 的弱引用
+
     }
 
     private static void proxyTest1() {
