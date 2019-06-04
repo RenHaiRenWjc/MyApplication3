@@ -8,11 +8,12 @@ import java.util.concurrent.BlockingQueue;
  * Description:自己线程池实现
  * author:wjc on 2019/5/6 21:40
  */
+
 public class MyThreadPool {
     // 线程池中默认线程的个数为5
-    private int coreSize = 5;
+    private static final int coreSize = 5;
     // 队列默认任务个数为100
-    private int maxThreadCount = 100;
+    private static final int maxThreadCount = 100;
     // 任务队列，作为一个缓冲
     private BlockingQueue<Runnable> taskQueue;
     // 工作线程组
@@ -21,10 +22,9 @@ public class MyThreadPool {
     private int workerNum;
 
 
+
     // 创建线程池
     public MyThreadPool(int workerNum, int taskCount) {
-
-
         if (workerNum <= 0) {
             workerNum = coreSize;
         }
@@ -32,7 +32,6 @@ public class MyThreadPool {
         if (taskCount <= 0) {
             taskCount = maxThreadCount;
         }
-
         taskQueue = new ArrayBlockingQueue<>(taskCount);
         workTasks = new WorkThread[workerNum];
         for (int i = 0; i < workTasks.length; i++) {
@@ -80,7 +79,7 @@ public class MyThreadPool {
                     r = taskQueue.take();
                     System.out.println(getId() + " run" + ",taskQueue size=" + taskQueue.size());
                     r.run();
-                    r = null;//help gc
+//                    r = null;//help gc
                 }
             } catch (InterruptedException e) {
                 interrupt();
@@ -88,7 +87,7 @@ public class MyThreadPool {
             }
         }
 
-        public void stopWork() {
+        private void stopWork() {
             interrupt();
         }
     }
