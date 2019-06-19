@@ -1,4 +1,4 @@
-package com.example.wjc.myapplication;
+package com.example.wjc.myapplication.bean;
 
 /**
  * ClassName:com.example.wjc.myapplication

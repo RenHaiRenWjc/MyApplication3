@@ -1,4 +1,4 @@
-package com.example.wjc.myapplication;
+package com.example.wjc.myapplication.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.wjc.myapplication.bean.ActivityTypeBean;
+import com.example.wjc.myapplication.R;
 
 import java.util.List;
 

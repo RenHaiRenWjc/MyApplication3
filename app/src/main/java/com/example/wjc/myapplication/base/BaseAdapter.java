@@ -1,10 +1,12 @@
-package com.example.wjc.myapplication;
+package com.example.wjc.myapplication.base;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import com.example.wjc.myapplication.base.BaseViewHolder;
 
 import java.util.ArrayList;
 import java.util.Collection;
