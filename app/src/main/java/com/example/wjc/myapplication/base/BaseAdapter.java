@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import com.example.wjc.myapplication.Utils.LogUtils;
 import com.example.wjc.myapplication.base.BaseViewHolder;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.List;
  * JcChen on 2019/6/16 11:03
  */
 public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder> {
+    private static final String TAG = "BaseAdapter";
     public Context context;
     private LayoutInflater mInflater;
     public List<T> mDates = new ArrayList<>();
@@ -30,14 +32,16 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
 
     @NonNull
     @Override
-    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new BaseViewHolder(mInflater.inflate(getLayoutId(), viewGroup, false));
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new BaseViewHolder(mInflater.inflate(getLayoutId(), parent, false));
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull BaseViewHolder baseViewHolder, int position) {
         onBindItemHolder(baseViewHolder, position);
     }
+
 
     @Override
     public int getItemCount() {

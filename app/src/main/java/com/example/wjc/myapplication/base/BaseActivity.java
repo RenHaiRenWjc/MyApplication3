@@ -5,11 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.wjc.myapplication.Utils.LogUtils;
 import com.example.wjc.myapplication.bean.ActivityTypeBean;
 import com.example.wjc.myapplication.R;
 
@@ -29,11 +31,13 @@ public abstract class BaseActivity extends AppCompatActivity {
         Adapter adapter = new Adapter(this);
         adapter.setDates(getList());
         RecyclerView recyclerView = findViewById(R.id.rl_base);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         recyclerView.setAdapter(adapter);
     }
 
     public abstract int setContentLayoutId();
+
     public abstract List<ActivityTypeBean> getList();
 
     private class Adapter extends BaseAdapter<ActivityTypeBean> {
