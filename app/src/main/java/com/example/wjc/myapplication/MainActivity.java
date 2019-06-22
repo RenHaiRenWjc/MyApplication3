@@ -1,11 +1,13 @@
 package com.example.wjc.myapplication;
 
 import android.app.Activity;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.example.wjc.myapplication.base.BaseActivity;
 import com.example.wjc.myapplication.bean.ActivityTypeBean;
 import com.example.wjc.myapplication.itemActivity.RxJavaTestActivity;
+import com.example.wjc.myapplication.test.RxJavaTest2Activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +23,14 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public List<ActivityTypeBean> getList() {
+        return getActivityTypeBeans();
+    }
+
+    @NonNull
+    private List<ActivityTypeBean> getActivityTypeBeans() {
         List<ActivityTypeBean> list = new ArrayList<>();
         list.add(new ActivityTypeBean("RxJava 测试", RxJavaTestActivity.class));
+        list.add(new ActivityTypeBean("RxJava2 测试", RxJavaTest2Activity.class));
         return list;
     }
 
