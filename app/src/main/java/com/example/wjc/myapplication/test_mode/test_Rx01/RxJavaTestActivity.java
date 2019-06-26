@@ -1,4 +1,4 @@
-package com.example.wjc.myapplication.itemActivity;
+package com.example.wjc.myapplication.test_mode.test_Rx01;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

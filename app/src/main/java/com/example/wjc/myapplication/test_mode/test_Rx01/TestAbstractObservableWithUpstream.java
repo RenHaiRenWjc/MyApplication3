@@ -1,6 +1,6 @@
-package com.example.wjc.myapplication.test;
+package com.example.wjc.myapplication.test_mode.test_Rx01;
 
-import com.example.wjc.myapplication.test.interfaceImp.TestObservableSource;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestObservableSource;
 
 /**
  * ClassName:com.example.wjc.myapplication.test

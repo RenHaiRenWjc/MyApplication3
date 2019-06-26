@@ -1,12 +1,12 @@
-package com.example.wjc.myapplication.test;
+package com.example.wjc.myapplication.test_mode.test_Rx01;
 
 import com.example.wjc.myapplication.Utils.LogUtils;
-import com.example.wjc.myapplication.test.interfaceImp.TestObservableOnSubscribe;
-import com.example.wjc.myapplication.test.interfaceImp.TestObservableSource;
-import com.example.wjc.myapplication.test.interfaceImp.TestObserver;
-import com.example.wjc.myapplication.test.interfaceImp.TestScheduler;
-import com.example.wjc.myapplication.test.oncretelyObservable.TestObservableObserveOn;
-import com.example.wjc.myapplication.test.oncretelyObservable.TestObservableSubscribeOn;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestObservableOnSubscribe;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestObservableSource;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestObserver;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestScheduler;
+import com.example.wjc.myapplication.test_mode.test_Rx01.oncretelyObservable.TestObservableObserveOn;
+import com.example.wjc.myapplication.test_mode.test_Rx01.oncretelyObservable.TestObservableSubscribeOn;
 
 /**
  * ClassName:com.example.javaproject

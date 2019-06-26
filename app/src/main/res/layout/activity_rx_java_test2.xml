@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".test.RxJavaTest2Activity">
+    tools:context=".test_mode.test_Rx01.RxJavaTest2Activity">
 
     <TextView
-        android:gravity="center"
-        android:text="-----RxJava测试------"
-       android:id="@+id/tv_test"
+        android:id="@+id/tv_test"
         android:layout_width="215dp"
         android:layout_height="67dp"
+        android:gravity="center"
+        android:text="-----RxJava测试------"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/tv_test2"
+        android:layout_width="215dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:text="-----RxJava背压测试------"
         tools:layout_editor_absoluteX="105dp"
         tools:layout_editor_absoluteY="199dp" />
 

@@ -1,11 +1,11 @@
-package com.example.wjc.myapplication.test.oncretelyObservable;
+package com.example.wjc.myapplication.test_mode.test_Rx01.oncretelyObservable;
 
 import com.example.wjc.myapplication.Utils.LogUtils;
-import com.example.wjc.myapplication.test.TestAbstractObservableWithUpstream;
-import com.example.wjc.myapplication.test.interfaceImp.TestDisposable;
-import com.example.wjc.myapplication.test.interfaceImp.TestObservableSource;
-import com.example.wjc.myapplication.test.interfaceImp.TestObserver;
-import com.example.wjc.myapplication.test.interfaceImp.TestScheduler;
+import com.example.wjc.myapplication.test_mode.test_Rx01.TestAbstractObservableWithUpstream;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestDisposable;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestObservableSource;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestObserver;
+import com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp.TestScheduler;
 
 import io.reactivex.disposables.Disposable;
 import io.reactivex.exceptions.Exceptions;

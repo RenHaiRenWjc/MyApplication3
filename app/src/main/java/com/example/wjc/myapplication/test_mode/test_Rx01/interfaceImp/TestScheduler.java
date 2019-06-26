@@ -1,8 +1,6 @@
-package com.example.wjc.myapplication.test.interfaceImp;
+package com.example.wjc.myapplication.test_mode.test_Rx01.interfaceImp;
 
 import android.icu.util.TimeUnit;
-
-import com.example.wjc.myapplication.test.interfaceImp.TestDisposable;
 
 /**
  * ClassName:com.example.wjc.myapplication.test

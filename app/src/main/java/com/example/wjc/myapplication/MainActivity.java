@@ -6,8 +6,8 @@ import android.util.Log;
 
 import com.example.wjc.myapplication.base.BaseActivity;
 import com.example.wjc.myapplication.bean.ActivityTypeBean;
-import com.example.wjc.myapplication.itemActivity.RxJavaTestActivity;
-import com.example.wjc.myapplication.test.RxJavaTest2Activity;
+import com.example.wjc.myapplication.test_mode.test_Rx01.RxJavaTestActivity;
+import com.example.wjc.myapplication.test_mode.test_Rx01.RxJavaTest2Activity;
 
 import java.util.ArrayList;
 import java.util.List;
